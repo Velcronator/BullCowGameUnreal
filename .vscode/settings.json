@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"D:/Documents/Repo/Unreal/BenTristem/BullCowGame/BullCowGame/.vs": true,
+		"D:/Documents/Repo/Unreal/BenTristem/BullCowGame/BullCowGame/.vscode": true,
+		"D:/Documents/Repo/Unreal/BenTristem/BullCowGame/BullCowGame/Content": true,
+		"D:/Documents/Repo/Unreal/BenTristem/BullCowGame/BullCowGame/Intermediate": true,
+		"D:/Documents/Repo/Unreal/BenTristem/BullCowGame/BullCowGame/Saved": true
+	}
+}
