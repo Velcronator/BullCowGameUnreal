@@ -28,7 +28,7 @@ void UBullCowCartridge::DisplayWelcomeMessage()
 
 void UBullCowCartridge::ProcessInput(const FString& Input)
 {
-	if (Input == "H") {
+	if (Input == "D") {
 		bIsItDebugTime = !bIsItDebugTime;
 		if (bIsItDebugTime) { 
 			PrintLine(TEXT("The Hidden word is %s"), *HiddenWord); 
