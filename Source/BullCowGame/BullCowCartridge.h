@@ -41,6 +41,6 @@ class BULLCOWGAME_API UBullCowCartridge : public UCartridge
 	bool bResetGame;
 	bool bEndPrompt;
 	const int32 LivesMultiplier = 4;
-	bool bIsItDebugTime = true;
+	bool bIsItDebugTime = false;
 	TArray<FString> ValidWords;
 };

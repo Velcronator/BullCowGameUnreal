@@ -28,6 +28,14 @@ void UBullCowCartridge::DisplayWelcomeMessage()
 
 void UBullCowCartridge::ProcessInput(const FString& Input)
 {
+	if (Input == "H") {
+		bIsItDebugTime = !bIsItDebugTime;
+		if (bIsItDebugTime) { 
+			PrintLine(TEXT("The Hidden word is %s"), *HiddenWord); 
+		}
+		return;
+	}
+
 	if (bEndPrompt) 
 	{
 		bResetGame = true;
@@ -84,7 +92,6 @@ void UBullCowCartridge::IntiateGame()
 	HiddenWord = GetHiddenWord();
 	Lives = HiddenWord.Len() * LivesMultiplier;
 	DisplayWelcomeMessage();
-	if (bIsItDebugTime) { PrintLine(TEXT("The Hidden word is %s"), *HiddenWord); }
 }
 
 FString UBullCowCartridge::GetHiddenWord()
